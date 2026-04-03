@@ -30,7 +30,7 @@ CREATE TABLE YCML (
 --TẠO BẢNG TRẠNG THÁI YÊU CẦU
 CREATE TABLE TT_YEU_CAU (
 	Ma_TTYC			VARCHAR(10) PRIMARY KEY,
-	Trang_Thai		NVARCHAR(30) CHECK(Trang_Thai IN(N'Trống', N'Đang ghép', N'Ghép thành công')) NOT NULL
+	Trang_Thai		NVARCHAR(30) CHECK(Trang_Thai IN(N'Trống', N'Đang ghép', N'Ghép thành công', N'Huỷ')) NOT NULL
 );GO
 
 --TẠO BẢNG LỊCH SỬ TRẠNG THÁI
